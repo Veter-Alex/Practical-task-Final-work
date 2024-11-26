@@ -1,33 +1,58 @@
-/* header-container */
-.header-container {
+/* App */
+.App {
+  background: #f0f0f0;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+}
+
+h3 {
+  padding: 10px 0;
+  margin: 0;
+}
+
+/* header-container */
+.header-container {
+  background-color: #e9e6e6;
+  box-shadow: 0 0 10px #000000;
+  box-shadow: 0 0 10px #020202;
 }
 .header-container h1 {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
 }
+
 .header-container nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
+  padding-bottom: 10px;
 }
 .header-container a {
   text-decoration: none;
-  margin: 0 10px;
-  font-size: 18px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2020dd;
+}
+
+.header-container a:hover {
+  color: #21218f;
+  transform: translateY(-10px);
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px 0px rgba(61, 61, 61, 0.5);
 }
 /* END header-container */
 
 /* main-container */
 .main-container {
-  margin: 0;
-  padding: 0;
+  padding: 0 20px 0;
   background-color: #f0f0f0;
   display: flex;
+  align-items: flex-start;
   flex-direction: row;
-  align-items: center;
+  box-shadow: 0 0 10px #000000;
+        box-shadow: 0 0 10px #020202;
 }
 
 .menu-goodstable a {
@@ -48,9 +73,10 @@
   font-size: 16px;
   border-collapse: collapse;
   width: 100%;
+  margin: 5px;
 }
 .goodstable-table th, .goodstable-table td {
-  border: 1px solid #ddd;
+  border: 1px solid #acacac;
   padding: 10px;
   text-align: center;
 }
@@ -64,6 +90,8 @@
   background-color: #f0f0f0;
   margin: 0;
   padding: 0 0 0 20px;
+  box-shadow: 0 0 10px #000000;
+  box-shadow: 0 0 10px #020202;
 }
 .profit-calculator-form label{
   margin: 0 15px 0 5px;
@@ -90,6 +118,14 @@
 /* additional-costs */
 .additional-cost {
   margin-bottom: 30px;
+}
+
+/* profit intermediate-values */
+.profit-intermediate-values {
+  margin: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 /* END footer-container */

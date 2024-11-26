@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 
 const ProfitCalculator = () => {
     const [goodPrice, setGoodPrice] = useState(0); // стоимость товара
@@ -64,8 +64,15 @@ const ProfitCalculator = () => {
         setNetProfit(netProfit);
         // рентабельность
         const profit = ((parseFloat(netProfit) / parseFloat(ownPrice)) * 100).toFixed(2);;
-        setProfit(profit);
+        if (profit === "NaN") {
+            setProfit(0);
+        }
+        else if (profit < 0)
+            setProfit(0);
+        else
+            setProfit(profit);
     };
+
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
@@ -107,7 +114,7 @@ const ProfitCalculator = () => {
     
     return (
         <div>
-            <h2>Расчет рентабельности вывода товара на рынок:</h2>
+            <h3>Расчет рентабельности вывода товара на рынок:</h3>
             <form className="profit-calculator-form">
                 <div className="good-cost">
                     <p>Информация о товаре:</p>
@@ -223,11 +230,11 @@ const ProfitCalculator = () => {
                             />
                         </label>
                     </div>
-                    <label className="net-profit intermediate-values">
+                    <label className="net-profit-intermediate-values">
                         Чистая прибыль: {netProfit}
                     </label>
                     <p></p>
-                    <label className="profit intermediate-values">
+                    <label className="profit-intermediate-values">
                         Рентабельность продажи товара: {profit} %
                     </label>
                 </div>

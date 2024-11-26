@@ -3,17 +3,17 @@ import React from "react";
 const Header = () => {
     return (
         <header className="header-container">
-            <h1>Система поддержки вывода товаров на рынок</h1>
+            <h1>Аналитическая система расчета рентабельности вывода продукта на маркетплейс.</h1>
             <nav className="header-nav">
                 <ul>
                     <li>
-                        <a href="/">Главная</a>
+                        <a href="/">ГЛАВНАЯ</a>
                     </li>
                     <li>
-                        <a href="#">О системе</a>
+                        <a href="#">О СИСТЕМЕ</a>
                     </li>
                     <li>
-                        <a href="#">Контакты</a>
+                        <a href="#">КОНТАКТЫ</a>
                     </li>
                 </ul>
             </nav>
