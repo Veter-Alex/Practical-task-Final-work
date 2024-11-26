@@ -1,0 +1,95 @@
+/* header-container */
+.header-container {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+.header-container h1 {
+  font-size: 24px;
+  text-align: center;
+}
+.header-container nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.header-container a {
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+}
+/* END header-container */
+
+/* main-container */
+.main-container {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu-goodstable a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+.menu-goodstable ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.goodstable-container p{
+  margin: 10px 0;
+  font-weight: bold;
+}
+.goodstable-table {
+  font-size: 16px;
+  border-collapse: collapse;
+  width: 100%;
+}
+.goodstable-table th, .goodstable-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+.goodstable-table th {
+  background-color: #f0f0f0;
+}
+/* END main-container */
+
+/* footer-container */
+.footer-container {
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+.profit-calculator-form label{
+  margin: 0 15px 0 5px;
+}
+.profit-calculator-form input {
+  width: 45px;
+  margin: 0 1px 0 5px;
+  font-size: 14px;
+}
+.profit-calculator-form p {
+  font-weight: bold;
+}
+/* good-cost */
+.good-cost {
+  margin-bottom: 30px;
+}
+/* good-info-fields */
+.good-info-fields {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+/* additional-costs */
+.additional-cost {
+  margin-bottom: 30px;
+}
+
+/* END footer-container */
